@@ -1,3 +1,4 @@
-jrtpΪjrtpͷ�ļ�
-mediaServerΪ��ȡRTP���ݰ���ת��
-VOIPֻ�ǽ�������֣�ʵ���ǲɼ���Ƶ���ݲ����͵�mediaServer�ٽ��պ���ʾ����
+windows平台采用jrtp对音视频数据进行采集，传输，转发并播放等的应用，里边以前用了一些第三方的源码
+jrtp为jrtp头文件
+mediaServer为收取RTP数据包后并转发
+VOIP只是叫这个名字，实际是采集视频数据并发送到mediaServer再接收后显示出来
