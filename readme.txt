@@ -1,0 +1,3 @@
+jrtp为jrtp头文件
+mediaServer为收取RTP数据包后并转发
+VOIP只是叫这个名字，实际是采集视频数据并发送到mediaServer再接收后显示出来

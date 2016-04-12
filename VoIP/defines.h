@@ -1,0 +1,24 @@
+
+#if !defined(DEFINES_H__F0B5049A_E3F5_454C_A652_EE5FBA0E677D__INCLUDED_)
+#define DEFINES_H__F0B5049A_E3F5_454C_A652_EE5FBA0E677D__INCLUDED_
+
+#define WM_SENDFILE		WM_USER + 100
+#define WM_RECVFILE		WM_USER + 101
+#define WM_AUDIODATA	WM_USER + 102
+#define WM_VIDEODATA	WM_USER + 103
+
+// 操作原语结构
+typedef struct
+{
+	DWORD		CHALLENGE[4];			// 挑战字段（MD5）
+	UINT		DataType;				// 数据类型
+	DWORD		DataLength;				// 附加数据总长度
+	DWORD		DataPostion;			// 附加数据偏移(0开始)
+}SEED_HEAD, *PTR_SEED_HEAD;
+
+#define BUFFER_SIZE		10240
+
+#define PACKET_VIDEO	100
+#define PACKET_AUDIO	200
+
+#endif // DEFINES_H__F0B5049A_E3F5_454C_A652_EE5FBA0E677D__INCLUDED_
